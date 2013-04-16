@@ -18,6 +18,7 @@ on_data_callback(struct ccn_closure *selfp, enum ccn_upcall_kind kind, struct cc
       // reexpress interest
       return CCN_UPCALL_RESULT_REEXPRESS; 
     case CCN_UPCALL_CONTENT:
+    case CCN_UPCALL_CONTENT_UNVERIFIED:
       {
         const unsigned char *ccnb = info->content_ccnb;
         size_t ccnb_size = info->pco->offset[CCN_PCO_E];
