@@ -1,3 +1,15 @@
 *.o
 server
 client
+
+c-api-client.pdf
+c-api-server.pdf
+ccnx-cpp-client.pdf
+ccnx-cpp-server.pdf
+ccnx-cpp/ccnx-cpp/
+ccnx-programming.pptx
+ndn-js-client.pdf
+ndn-js-server.pdf
+pyccn-client.pdf
+pyccn-server.pdf
+
