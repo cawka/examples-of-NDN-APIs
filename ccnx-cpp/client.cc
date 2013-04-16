@@ -43,6 +43,7 @@ main (int argc, char **argv)
   FILENAME = argv[1];
 
   InterestBaseName = Ccnx::Name ("ccnx:/my-local-prefix/simple-fetch/file");
+  InterestBaseName (FILENAME);
 
   cerr << ">> C++ " << Ccnx::Name (InterestBaseName)(0) << endl;
   handler.sendInterest (Ccnx::Name (InterestBaseName)(0),
