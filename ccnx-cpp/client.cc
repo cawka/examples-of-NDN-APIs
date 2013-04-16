@@ -23,8 +23,8 @@ void OnData (Ccnx::Name name, Ccnx::PcoPtr pco)
     {
       return;
     }
-  
-  cerr << ">> C++ " << Ccnx::Name (InterestBaseName)(seqnum + 1) << endl;
+
+  cerr << ">> C++ " << Ccnx::Name (InterestBaseName)(seqnum + 1) << endl; // a shortcut to construct name
   handler.sendInterest (Ccnx::Name (InterestBaseName)(seqnum + 1),
                         Ccnx::Closure (OnData, OnTimeout),
                         Ccnx::Selectors ().scope (Ccnx::Selectors::SCOPE_LOCAL_HOST));
@@ -43,7 +43,7 @@ main (int argc, char **argv)
   FILENAME = argv[1];
 
   InterestBaseName = Ccnx::Name ("ccnx:/my-local-prefix/simple-fetch/file");
-  InterestBaseName (FILENAME);
+  InterestBaseName.appendComp (FILENAME);
 
   cerr << ">> C++ " << Ccnx::Name (InterestBaseName)(0) << endl;
   handler.sendInterest (Ccnx::Name (InterestBaseName)(0),
