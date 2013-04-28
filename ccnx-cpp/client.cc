@@ -1,5 +1,5 @@
 
-#include <ccnx-all.h>
+#include <ccnx-cpp.h>
 #include <iostream>
 
 using namespace std;
@@ -8,7 +8,7 @@ const char *FILENAME = NULL;
 Ccnx::Name InterestBaseName;
 
 // create a global handler
-Ccnx::CcnxWrapper handler;
+Ccnx::Wrapper handler;
 
 void OnData (Ccnx::Name name, Ccnx::PcoPtr pco);
 void OnTimeout (Ccnx::Name name, const Ccnx::Closure &closure, Ccnx::Selectors selectors);

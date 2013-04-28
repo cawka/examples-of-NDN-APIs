@@ -1,5 +1,5 @@
 
-#include <ccnx-all.h>
+#include <ccnx-cpp.h>
 #include <iostream>
 
 using namespace std;
@@ -7,7 +7,7 @@ using namespace std;
 Ccnx::Name InterestBaseName;
 
 // create a global handler
-Ccnx::CcnxWrapper handler;
+Ccnx::Wrapper handler;
 
 void OnInterest (Ccnx::Name name, Ccnx::Selectors selectors)
 {
