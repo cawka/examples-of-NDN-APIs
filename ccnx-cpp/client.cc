@@ -39,6 +39,12 @@ void OnTimeout (Ccnx::Name name, const Ccnx::Closure &closure, Ccnx::Selectors s
 int
 main (int argc, char **argv)
 {
+  if (argc < 2)
+    {
+      std::cerr << "You have to specify filename as an argument" << std::endl;
+      return -1;
+    }
+  
   // this code does not check for most of the bad conditions
   FILENAME = argv[1];
 
