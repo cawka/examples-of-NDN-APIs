@@ -1,12 +1,10 @@
 More information about used APIs
 ================================
 
-ccnx C API: http://www.ccnx.org
+ndn-cxx (C++): http://named-data.net/doc/ndn-cxx/
 
-C++ API (ccnx-cpp): https://github.com/named-data/ccnx-cpp
+PyNDN2: https://github.com/named-data/PyNDN2
 
-PyCCN: https://github.com/named-data/PyCCN
-
-NDN.js: https://github.com/named-data/ndn-js
+NDN-JS: https://github.com/named-data/ndn-js
 
 
